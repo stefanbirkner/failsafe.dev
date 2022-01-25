@@ -9,6 +9,10 @@ title: Policies
 1. TOC
 {:toc}
 
+A [policy][Policy] is a strategy for executing a statement. Examples are
+[timeout] (limits the time a statement may run) and [retry] (executes the
+statement again if it fails).
+
 ## Failure Handling
 
 Failsafe policies determine which execution [results or failures][FailurePolicyBuilder] to handle and how to handle them. By default, policies handle any `Exception` that is thrown. But policies can also be configured to handle more specific failures or conditions:
